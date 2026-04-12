@@ -1,5 +1,23 @@
 <?php
 include("db.php");
+if (isset($_POST['update'])) {
+  $id = $_POST['id'];
+  $name = $_POST['name'];
+  $sql = "UPDATE student SET name='$name' WHERE id='$id'";
+  if (mysqli_query($conn, $sql)) {
+    echo "Record Updated";
+  } else {
+    echo "Error: " . mysqli_error($conn);
+  }
+}
+?>
+<form method="post">
+  Enter ID: <input type="text" name="id"><br>
+  Enter New Name: <input type="text" name="name"><br>
+  <input type="submit" name="update" value="Update">
+</form>
+<?php
+include("db.php");
 $message = "";
 if (isset($_POST['update'])) {
   $id = $_POST['id'];

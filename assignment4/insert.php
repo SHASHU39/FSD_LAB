@@ -1,5 +1,30 @@
 <?php
 include("db.php");
+if (isset($_POST['submit'])) {
+  $id = $_POST['id'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $mobile = $_POST['mobile'];
+
+  if ($id == "" || $name == "" || $email == "" || $mobile == "") {
+    echo "All fields required";
+  } else {
+    $sql = "INSERT INTO student (id, name, email, mobile) VALUES ('$id', '$name', '$email', '$mobile')";
+    if (mysqli_query($conn, $sql)) {
+      echo "Record Inserted";
+    } else {
+      echo "Error: " . mysqli_error($conn);
+    }
+  }
+}
+?>
+<form method="post">
+  ID:<input type="text" name="id"> Name:<input type="text" name="name">
+  Email:<input type="text" name="email"> Mobile:<input type="text" name="mobile">
+  <input type="submit" name="submit" value="Insert">
+</form>
+<?php
+include("db.php");
 $message = "";
 if (isset($_POST['submit'])) {
   $id = $_POST['id'];

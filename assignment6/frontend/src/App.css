@@ -1,3 +1,59 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0b1120 0%, #131a33 100%);
+  color: #edf2f7;
+}
+.card {
+  width: min(780px, 90%);
+  background: #111827;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.5);
+}
+h1 {
+  margin-bottom: 24px;
+}
+.form-row {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #f8fafc;
+}
+button {
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 700;
+  cursor: pointer;
+}
+.student-list {
+  display: grid;
+  gap: 12px;
+}
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #1f2937;
+  border-radius: 16px;
+}
+.student-item button {
+  background: #ef4444;
+  color: #ffffff;
+}
 body { margin: 0; font-family: Arial, sans-serif; background: #0b0f1f; color: #f8fafc; }
 .app-wrapper { max-width: 760px; margin: 40px auto; padding: 24px; background: rgba(15, 23, 42, 0.95); border-radius: 20px; }
 .app-wrapper h1 { margin-bottom: 24px; color: #60a5fa; }

@@ -1,3 +1,58 @@
+const form = document.getElementById('studentForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const phoneInput = document.getElementById('phone');
+
+const nameError = document.getElementById('nameError');
+const emailError = document.getElementById('emailError');
+const passwordError = document.getElementById('passwordError');
+const phoneError = document.getElementById('phoneError');
+const successMessage = document.getElementById('successMessage');
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validatePhone(phone) {
+  return /^[0-9]{10}$/.test(phone);
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let valid = true;
+
+  nameError.textContent = '';
+  emailError.textContent = '';
+  passwordError.textContent = '';
+  phoneError.textContent = '';
+  successMessage.textContent = '';
+
+  if (!nameInput.value.trim()) {
+    nameError.textContent = 'Name is required.';
+    valid = false;
+  }
+
+  if (!validateEmail(emailInput.value)) {
+    emailError.textContent = 'Enter a valid email address.';
+    valid = false;
+  }
+
+  if (passwordInput.value.length < 6) {
+    passwordError.textContent = 'Password must be at least 6 characters.';
+    valid = false;
+  }
+
+  if (!validatePhone(phoneInput.value)) {
+    phoneError.textContent = 'Enter a 10-digit phone number.';
+    valid = false;
+  }
+
+  if (valid) {
+    successMessage.textContent = 'Form submitted successfully!';
+    form.reset();
+  }
+});
 const studentForm = document.getElementById('studentForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');

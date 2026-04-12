@@ -1,5 +1,27 @@
 # Assignment 4 — PHP Server-Side Scripting & MySQL Database Application
 
+## Student
+- Name: Shashwat Nande
+- Roll No: 05
+- PRN: 1032232121
+- Batch: C1
+- Semester: TY CSE SEM 6
+
+## Aim
+Write server-side script in PHP to perform form validation and create database application using PHP and MySQL to perform insert, update, delete and search operations.
+
+## Files
+- `db.php`
+- `insert.php`
+- `update.php`
+
+## Description
+This assignment demonstrates PHP server-side scripting with MySQL database connectivity for inserting and updating student records. The `db.php` file establishes a connection to the `studentdb` database.
+
+## Note
+Use XAMPP or another PHP server to run the scripts and ensure the MySQL database `studentdb` with table `student` is created before inserting or updating.
+# Assignment 4 — PHP Server-Side Scripting & MySQL Database Application
+
 ## Aim
 Write server-side script in PHP to perform form validation and create a database application using PHP and MySQL to perform insert, update, delete and search operations.
 

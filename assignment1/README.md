@@ -4,6 +4,45 @@
 - Name: Shashwat Nande
 - Roll No: 05
 - PRN: 1032232121
+- Batch: C1
+- Semester: TY CSE SEM 6
+
+## Aim
+To understand and practice Git fundamentals including local and remote repositories, branching, push, pull, and merge operations by creating and working with a public Git repository.
+
+## Learning Objectives
+- Create and manage a local Git repository
+- Create a public remote repository on GitHub
+- Connect local and remote repositories
+- Use branches for parallel development
+- Push and pull changes between repositories
+- Resolve basic merge scenarios
+
+## Procedure
+1. Create project folder and initialize Git.
+2. Add `README.md` and `feature.txt`.
+3. Create branch `feature-1` and commit feature work.
+4. Merge `feature-1` into `main`.
+5. Push commits to the remote repository.
+
+## Files
+- `README.md`
+- `feature.txt`
+
+## Expected output
+- Public GitHub repository created
+- Multiple commits visible
+- Branch `feature-1` created and merged
+- Successful push and pull operations
+
+## Conclusion
+Git concepts for local and remote repositories, branching, pushing, pulling, and merging were practiced and implemented successfully.
+# Assignment 1 — Git Local & Remote Repository
+
+## Student
+- Name: Shashwat Nande
+- Roll No: 05
+- PRN: 1032232121
 - Batch: TY CSE SEM 6
 
 ## Aim
