@@ -1,0 +1,6 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; }
+.app-container { max-width: 760px; margin: 80px auto; padding: 24px; background: rgba(15, 23, 42, 0.95); border-radius: 24px; box-shadow: 0 24px 50px rgba(15, 23, 42, 0.35); }
+.app-container h1 { margin-bottom: 16px; color: #fcd34d; }
+.counter-card { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 24px 0; }
+.counter-card button { width: 64px; height: 64px; border: none; border-radius: 18px; font-size: 1.6rem; background: #6366f1; color: white; cursor: pointer; }
+.counter-card span { min-width: 64px; text-align: center; font-size: 2rem; }
